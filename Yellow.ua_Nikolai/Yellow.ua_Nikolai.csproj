@@ -46,14 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="GUI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="GUI\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +79,43 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controller\" />
+    <Folder Include="Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_tool.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sravnenie.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basket.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iphone13.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\macbookm1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usediphone.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\applewatch.JPG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
