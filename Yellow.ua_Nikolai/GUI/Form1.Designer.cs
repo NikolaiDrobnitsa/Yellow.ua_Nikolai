@@ -230,6 +230,7 @@ namespace Yellow.ua_Nikolai
             this.pictureBox3.Size = new System.Drawing.Size(260, 268);
             this.pictureBox3.TabIndex = 12;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox2
             // 
@@ -296,7 +297,7 @@ namespace Yellow.ua_Nikolai
             this.toolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(32, 30);
+            this.toolStripButton4.Size = new System.Drawing.Size(32, 31);
             this.toolStripButton4.Text = "toolStripButton4";
             // 
             // pictureBox1

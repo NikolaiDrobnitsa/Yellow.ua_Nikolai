@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Yellow.ua_Nikolai.Auth.GUI;
 using Yellow.ua_Nikolai.GUI;
 
 namespace Yellow.ua_Nikolai
@@ -43,7 +44,14 @@ namespace Yellow.ua_Nikolai
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
+            Begin_form begin_Form = new Begin_form();
+            begin_Form.Show();
+        }
 
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Catalogs catalogs = new Catalogs();
+            catalogs.Show();
         }
     }
 }

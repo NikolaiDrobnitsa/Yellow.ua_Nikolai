@@ -76,6 +76,12 @@
     <Compile Include="Auth\GUI\Begin_form.Designer.cs">
       <DependentUpon>Begin_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Auth\GUI\SingUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auth\GUI\SingUp.Designer.cs">
+      <DependentUpon>SingUp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Auth\Model\Users.cs" />
     <Compile Include="GUI\Catalogs.cs">
       <SubType>Form</SubType>
@@ -101,6 +107,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Auth\GUI\Begin_form.resx">
       <DependentUpon>Begin_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Auth\GUI\SingUp.resx">
+      <DependentUpon>SingUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Catalogs.resx">
       <DependentUpon>Catalogs.cs</DependentUpon>

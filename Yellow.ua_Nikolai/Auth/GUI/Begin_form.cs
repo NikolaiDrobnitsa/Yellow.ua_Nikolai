@@ -17,44 +17,44 @@ namespace Yellow.ua_Nikolai.Auth.GUI
         {
             InitializeComponent();
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             AuthorizationController authorization = new AuthorizationController();
             authorization.Authorization(textBox1.Text, textBox2.Text);
             if (authorization.check_pass == true && authorization.check_email == true)
             {
-                label4.Visible = false;
-                label3.ForeColor = Color.Gray;
-                label3.Text = "Account does not exist! Register?";
-                label3.Enabled = true;
+                label9.Visible = false;
+                label10.ForeColor = Color.Gray;
+                label10.Text = "Account does not exist! Register?";
+                label10.Enabled = true;
 
             }
             else
             {
-                label3.Enabled = false;
-                label3.ForeColor = Color.Red;
+                label10.Enabled = false;
+                label10.ForeColor = Color.Red;
                 if (authorization.check_email == true)
                 {
-                    label4.Visible = true;
-                    label4.Text = "Incorrect email";
+                    label9.Visible = true;
+                    label9.Text = "Incorrect email";
                 }
                 else
                 {
-                    label4.Visible = false;
-                    label4.Text = "";
+                    label9.Visible = false;
+                    label9.Text = "";
                 }
                 if (authorization.check_pass == true)
                 {
-                    label3.Text = "Incorrect password";
+                    label10.Text = "Incorrect password";
                 }
                 else
                 {
-                    label3.Text = "";
+                    label10.Text = "";
                 }
             }
             if (authorization.check_pass == false)
             {
-                MessageBox.Show("AUTH");
+                MessageBox.Show("Успешная авторизацыя");
             }
 
 
@@ -64,42 +64,56 @@ namespace Yellow.ua_Nikolai.Auth.GUI
         {
             if (textBox1.Text == "")
             {
-                label4.Text = required_email;
+                label9.Text = required_email;
             }
             else
             {
                 if (textBox1.Text.Contains('@') && textBox1.Text.Contains('.'))
                 {
-                    label4.Visible = false;
+                    label9.Visible = false;
                 }
                 else
                 {
-                    label4.Text = "Invalid email format! You forgot \"@\" or \".\"!";
+                    label9.Text = "Invalid email format! You forgot \"@\" or \".\"!";
                 }
             }
             textBox1.LostFocus += TextBox1_LostFocus;
         }
         private void TextBox1_LostFocus(object sender, EventArgs e)
         {
-            label4.Visible = true;
+            label9.Visible = true;
             if (textBox1.Text == "")
             {
-                label4.Text = required_email;
+                label9.Text = required_email;
             }
             else
             {
                 if (textBox1.Text.Contains('@') && textBox1.Text.Contains('.'))
                 {
-                    label4.Visible = false;
+                    label9.Visible = false;
                 }
                 else
                 {
-                    label4.Text = "Invalid email format! You forgot \"@\" or \".\"!";
+                    label9.Text = "Invalid email format! You forgot \"@\" or \".\"!";
                 }
             }
 
         }
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            SingUp singUp = new SingUp();
+            singUp.Show();
+        }
 
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
