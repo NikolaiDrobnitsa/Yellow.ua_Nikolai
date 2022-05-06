@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Yellow.ua_Nikolai.GUI;
 
 namespace Yellow.ua_Nikolai
 {
@@ -19,7 +20,8 @@ namespace Yellow.ua_Nikolai
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Catalogs catalogs = new Catalogs();
+            catalogs.Show();
         }
         bool check = false;
 
@@ -36,6 +38,11 @@ namespace Yellow.ua_Nikolai
                 check = false;
             }
             
+
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
 
         }
     }

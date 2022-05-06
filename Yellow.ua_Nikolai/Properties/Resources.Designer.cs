@@ -103,6 +103,26 @@ namespace Yellow.ua_Nikolai.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iphone_1 {
+            get {
+                object obj = ResourceManager.GetObject("iphone_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iphone_2 {
+            get {
+                object obj = ResourceManager.GetObject("iphone_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iphone13 {
             get {
                 object obj = ResourceManager.GetObject("iphone13", resourceCulture);
